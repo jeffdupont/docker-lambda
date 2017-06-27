@@ -6,3 +6,10 @@ docker run --rm -it \
     -e AWS_PROFILE=$AWS_PROFILE \
     sandbox/docker-lambda \
     node /app/index.js foo '{"bar":"baz"}'
+
+//// SAMPLE EVENT JSON
+var event = {
+    "action": "{LAMBDA ACTION}",
+    "apikey": "{AWS_USER_API_KEY}",
+    "body": { }
+};
